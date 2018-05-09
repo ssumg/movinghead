@@ -27,6 +27,8 @@ function draw(){
   ellipse(width/2, height/2, 100, 150);
       image(suit, 130, 45);
   image(head[num],mouseX, 150);
-
   
+}
+function mousePressed(){
+  num++;
 }
