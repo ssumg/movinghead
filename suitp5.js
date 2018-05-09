@@ -21,7 +21,7 @@ function draw(){
   if(mouseX <= width/2)
     fill(mouseX, mouseY, mouseX*mouseY);
   ellipse(width/2, height/2, 100, 150);
-  image(head[num],mouseX, 150);
+  image(head[0],mouseX, 150);
   
  /*if(mouseX >= 220 && mouseX < 300) 
    num = 0;
