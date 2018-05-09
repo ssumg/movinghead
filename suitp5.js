@@ -5,9 +5,9 @@ var num;
 function setup(){
   background(150);
   createCanvas(700, 900);
-  suit = loadImage("http://cfile28.uf.tistory.com/image/99AB93465AF303FE09EC6A");  
-  head[0] = loadImage("http://cfile9.uf.tistory.com/image/998CF3475AF303FE29CC59");
-  head[1] = loadImage("http://cfile3.uf.tistory.com/image/99AE5C335AF303FE0FD471");
+  suit = loadImage("assets/suit.png");  
+  head[0] = loadImage("assets/head1.png");
+  head[1] = loadImage("assets/head2.png");
 
 }
 
@@ -21,10 +21,10 @@ function draw(){
   if(mouseX <= width/2)
     fill(mouseX, mouseY, mouseX*mouseY);
   ellipse(width/2, height/2, 100, 150);
-  image(head[0],mouseX, 150);
+  image(head[num],mouseX, 150);
   
- /*if(mouseX >= 220 && mouseX < 300) 
+ if(mouseX >= 220 && mouseX < 300) 
    num = 0;
  else
-   num = 1;*/
+   num = 1;
 }
