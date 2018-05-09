@@ -13,6 +13,10 @@ function setup(){
 
 function draw(){
   
+ if(mouseX >= 220 && mouseX < 300) 
+   num = 0;
+ else
+   num = 1;
 
   mouseX = constrain(mouseX, -160, width-80);
   background(150);
@@ -22,11 +26,7 @@ function draw(){
     fill(mouseX, mouseY, mouseX*mouseY);
   ellipse(width/2, height/2, 100, 150);
       image(suit, 130, 45);
-  image(head[0],mouseX, 150);
+  image(head[num],mouseX, 150);
 
   
- /*if(mouseX >= 220 && mouseX < 300) 
-   num = 0;
- else
-   num = 1;*/
 }
